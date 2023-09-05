@@ -35,7 +35,7 @@ Resources:
     Properties:
       FunctionName: !Sub lambda-${GitHubRepo}-blue-green-swap
       Handler: blue_green_flip.handler
-      Runtime: python2.7
+      Runtime: python3.9
       Description: !Sub lambda-${GitHubRepo}-blue-green-swap
       Code:
         S3Bucket: !Ref TemplateBucket
